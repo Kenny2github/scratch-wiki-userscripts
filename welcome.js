@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-var welcomeMessage = '{{User:'+document.getElementsByTagName('a')[61].innerHTML+'/Welcome}}'; //Replace this with your welcome message
+var welcomeMessage = '{{User:'+document.getElementById('pt-userpage').getElementsByTagName('a')[0].innerHTML+'/Welcome}}'; //Replace this with your welcome message
 function elem(id) {
     return document.getElementById(id);
 }
