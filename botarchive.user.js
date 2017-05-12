@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Bot Archive
+// @name         Bot Archiver
 // @namespace    http://github.com/Kenny2github
 // @version      0.1
 // @description  Automatically move bot edits to archive
