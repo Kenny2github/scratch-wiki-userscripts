@@ -1,14 +1,13 @@
 // ==UserScript==
 // @name         Wiki Welcome
-// @namespace    http://Kenny2github.github.com/
+// @namespace    http://github.com/Kenny2github
 // @version      0.1
-// @description  try to take over the world!
+// @description  Give new users some love!
 // @author       You
 // @match        https://wiki.scratch.mit.edu/w/index.php?title=User_talk:*&action=edit&section=new
-// @grant        none
 // ==/UserScript==
 
-var welcomeMessage = '{{User:'+document.getElementById('pt-userpage').getElementsByTagName('a')[0].innerHTML+'/Welcome}}'; //Replace this with your welcome message
+var welcomeMessage = '{{User:'+document.getElementById('pt-userpage').getElementsByTagName('a')[0].innerHTML+'/Welcome}}';
 function elem(id) {
     return document.getElementById(id);
 }
