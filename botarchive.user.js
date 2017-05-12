@@ -6,7 +6,6 @@
 // @author       You
 // @match        https://wiki.scratch.mit.edu/w/index.php?title=User_talk:*&action=edit
 // @match        https://wiki.scratch.mit.edu/wiki/User_talk:*/*
-// @grant        none
 // ==/UserScript==
 /* NOTE: THIS USERSCRIPT ASSUMES THAT THE BOT EDITS ARE ON THE BOTTOM OF THE PAGE.
 IF THE BOT EDITS ARE NOT ON THE BOTTOM, YOU WILL REMOVE A REAL USER'S MESSAGE THAT
