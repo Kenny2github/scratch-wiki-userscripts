@@ -19,15 +19,19 @@ function getParameterByName(name, url) {
 function save() {
     document.getElementById('wpSave').click();
 }
-document.getElementById('wpSave').type = 'button';
-if (!document.getElementById('wpTextbox1').value.includes('~~~~')){
-    if (getParameterByName('action') === 'submit') {
-        document.getElementById('wikiPreview').innerHTML = '<div><h2>Warning</h2><p style="color:#cc0000;text-indent:40px"><b>You have not put your signature anywhere!</b> Please fix this by adding four tildas (<code>~~~~</code>) to the end of your post. <a href="#editform">→ Go to editing area</a></p><hr></div>' + document.getElementById('wikiPreview').innerHTML;
-    }
-    document.getElementById('wpSave').onclick = function(){
-        if (prompt("Wait! You haven't added a signature yet! Please use four tildas (~~~~) to sign. Type CONFIRM in all caps to skip adding a signature") === "CONFIRM") {
+if (getParameterByName('title').toLowerCase().includes('talk')) {
+    document.getElementById('wpSave').type = 'button';
+    if (!document.getElementById('wpTextbox1').value.includes('~~~~')){
+        if (getParameterByName('action') === 'submit') {
+            document.getElementById('wikiPreview').innerHTML = '<div><h2>Warning</h2><p style="color:#cc0000;text-indent:40px"><b>You have not put your signature anywhere!</b> Please fix this by adding four tildas (<code>~~~~</code>) to the end of your post. <a href="#editform">→ Go to editing area</a></p><hr></div>' + document.getElementById('wikiPreview').innerHTML;
+        }
+        document.getElementById('wpSave').onclick = function(){
             document.getElementById('wpSave').type = 'submit';
-            save();
-        } else {}
-    };
+            if (prompt("Wait! You haven't added a signature yet! Please use four tildas (~~~~) to sign. Type CONFIRM in all caps to skip adding a signature") === "CONFIRM") {
+                save();
+            } else {
+                document.getElementById('wpSave').type = 'button';
+            }
+        };
+    }
 }
