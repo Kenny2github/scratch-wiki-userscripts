@@ -28,11 +28,13 @@ if (getParameterByName('title').toLowerCase().includes('talk')) {
         }
         wpSave.onclick = function(){
             wpSave.type = 'submit';
-            if (prompt("Wait! You haven't added a signature yet! Please use four tildas (~~~~) to sign. Type CONFIRM in all caps to skip adding a signature") === "CONFIRM") {
-                wpSave.onclick = undefined;
-                save();
-            } else {
-                wpSave.type = 'button';
+            if (document.getElementById('wpTextbox1').value.includes('~~~~') !== true){
+                if (prompt("Wait! You haven't added a signature yet! Please use four tildas (~~~~) to sign. Type CONFIRM in all caps to skip adding a signature") === "CONFIRM") {
+                    wpSave.onclick = undefined;
+                    save();
+                } else {
+                    wpSave.type = 'button';
+                }
             }
         };
     } else {
