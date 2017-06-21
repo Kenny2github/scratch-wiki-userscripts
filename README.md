@@ -1,2 +1,2 @@
 # scratch-wiki-welcome
-Welcome new users to the Scratch Wiki!
+A bunch of userscripts to make Scratch Wiki editing easier.
