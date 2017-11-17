@@ -107,7 +107,7 @@ function askForSummary(message) {
     document.body.appendChild(dim);
     document.body.appendChild(box);
 }
-if (getQueryVariable('action') == 'edit' && getQueryVariable('section') != 'new') {
+if (['edit', 'submit'].includes(getQueryVariable('action')) && getQueryVariable('section') != 'new') {
     summaries = window.localStorage.getItem('cannedSummaries');
     if (summaries === null) {
         summaries = '';
