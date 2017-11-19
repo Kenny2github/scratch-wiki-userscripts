@@ -38,7 +38,7 @@ function done(settings) {
         summ.style.padding = '1px 4px';
         summ.title = 'Insert canned edit summary';
         summ.onclick = function(){
-            document.getElementById('wpSummary').value = this.innerHTML + ') (canned edit summary';
+            document.getElementById('wpSummary').value = this.innerHTML + ') ([[User:Kenny2scratch/Project Guides/Canned Edit Summaries|canned edit summary]]';
             document.getElementById('wpSave').click();
         };
         summ.innerHTML = i;
