@@ -3,8 +3,8 @@
 // @version      0.1
 // @description  Insert pre-made edit summaries at the click of a button!
 // @author       Kenny2scratch
-// @match        https://wiki.scratch.mit.edu/wiki/*
-// @match        https://wiki.scratch.mit.edu/w/*
+// @match        https://en.scratch-wiki.info/wiki/*
+// @match        https://en.scratch-wiki.info/w/*
 // ==/UserScript==
 
 function getQueryVariable(variable) {

@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  This userscript reminds users to add signatures.
 // @author       You
-// @match        https://wiki.scratch.mit.edu/w/index.php?title=*&action=*
+// @match        https://en.scratch-wiki.info/w/index.php?title=*&action=*
 // ==/UserScript==
 
 function getParameterByName(name, url) {

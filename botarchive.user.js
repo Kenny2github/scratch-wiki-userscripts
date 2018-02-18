@@ -4,8 +4,8 @@
 // @version      0.1
 // @description  Automatically move bot edits to archive
 // @author       You
-// @match        https://wiki.scratch.mit.edu/w/index.php?title=User_talk:*&action=edit
-// @match        https://wiki.scratch.mit.edu/wiki/User_talk:*/*
+// @match        https://en.scratch-wiki.info/w/index.php?title=User_talk:*&action=edit
+// @match        https://en.scratch-wiki.info/wiki/User_talk:*/*
 // ==/UserScript==
 /* NOTE: THIS USERSCRIPT ASSUMES THAT THE BOT EDITS ARE ON THE BOTTOM OF THE PAGE.
 IF THE BOT EDITS ARE NOT ON THE BOTTOM, YOU WILL REMOVE A REAL USER'S MESSAGE THAT
