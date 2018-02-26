@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Wiki Welcome
 // @namespace    http://github.com/Kenny2github
-// @version      0.1
+// @version      0.2
 // @description  Give new users some love!
 // @author       You
 // @match        https://en.scratch-wiki.info/w/index.php?title=User_talk:*&action=edit&section=new

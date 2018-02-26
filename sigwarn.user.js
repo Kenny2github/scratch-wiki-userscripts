@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Siggy Warner
 // @namespace    http://github.com/Kenny2github
-// @version      0.1
+// @version      0.2
 // @description  This userscript reminds users to add signatures.
 // @author       You
 // @match        https://en.scratch-wiki.info/w/index.php?title=*&action=*

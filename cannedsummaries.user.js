@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Canned Edit Summaries
-// @version      0.1
+// @version      0.2
 // @description  Insert pre-made edit summaries at the click of a button!
 // @author       Kenny2scratch
 // @match        https://en.scratch-wiki.info/wiki/*

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cite This Post
 // @namespace    https://github.com/Kenny2github
-// @version      0.2
+// @version      0.3
 // @description  get a reference in the correct format copied in just a couple clicks!
 // @author       Kenny2github
 // @match        https://scratcharchive.asun.co/forums/viewtopic.php*
