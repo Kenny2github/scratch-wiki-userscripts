@@ -3,6 +3,7 @@
 // @version      0.2
 // @description  Insert pre-made edit summaries at the click of a button!
 // @author       Kenny2scratch
+// @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/cannedsummaries.user.js
 // @match        https://en.scratch-wiki.info/wiki/*
 // @match        https://en.scratch-wiki.info/w/*
 // ==/UserScript==

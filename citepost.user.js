@@ -4,6 +4,7 @@
 // @version      0.3
 // @description  get a reference in the correct format copied in just a couple clicks!
 // @author       Kenny2github
+// @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/citepost.user.js
 // @match        https://scratcharchive.asun.co/forums/viewtopic.php*
 // @grant        none
 // ==/UserScript==

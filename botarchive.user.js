@@ -3,7 +3,8 @@
 // @namespace    http://github.com/Kenny2github
 // @version      0.2
 // @description  Automatically move bot edits to archive
-// @author       You
+// @author       Kenny2github
+// @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/botarchive.user.js
 // @match        https://en.scratch-wiki.info/w/index.php?title=User_talk:*&action=edit
 // @match        https://en.scratch-wiki.info/wiki/User_talk:*/*
 // ==/UserScript==
