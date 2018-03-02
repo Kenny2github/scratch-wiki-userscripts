@@ -26,6 +26,7 @@ function done(settings) {
     var label = document.createElement('label');
     label.innerHTML = 'Summary:';
     label.for = 'wpSummary';
+    label.addEventListener('click',function(e){askForSummary("Add an edit summary below.");});
     lab.appendChild(label);
 
     summs.filter(function(i){
