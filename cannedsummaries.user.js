@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Canned Edit Summaries
-// @version      0.2
+// @version      0.3
 // @description  Insert pre-made edit summaries at the click of a button!
 // @author       Kenny2scratch
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/cannedsummaries.user.js
