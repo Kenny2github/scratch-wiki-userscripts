@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Canned Edit Summaries
-// @version      0.2
+// @version      0.3
 // @description  Insert pre-made edit summaries at the click of a button!
 // @author       Kenny2scratch
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/cannedsummaries.user.js
@@ -26,6 +26,7 @@ function done(settings) {
     var label = document.createElement('label');
     label.innerHTML = 'Summary:';
     label.for = 'wpSummary';
+    label.addEventListener('click',function(e){askForSummary("Add an edit summary below.");});
     lab.appendChild(label);
 
     summs.filter(function(i){
