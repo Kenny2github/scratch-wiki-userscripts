@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Siggy Warner
 // @namespace    http://github.com/Kenny2github
-// @version      0.2
+// @version      0.3
 // @description  This userscript reminds users to add signatures.
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/sigwarn.user.js
@@ -23,7 +23,7 @@ function save() {
 }
 if (getParameterByName('title').toLowerCase().includes('talk')) {
     wpSave.type = 'button';
-    if (document.getElementById('wpTextbox1').value.includes('~~~~') !== true){
+    if (document.getElementById('wpTextbox1').parentElement.innerHTML.includes('~~~~') !== true){ //work around CodeMirror taking over the textarea with a separate div
         if (getParameterByName('action') === 'submit') {
             document.getElementById('wikiPreview').innerHTML = '<div><h2>Warning</h2><p style="color:#cc0000;text-indent:40px"><b>You have not put your signature anywhere!</b> Please fix this by adding four tildas (<code>~~~~</code>) to the end of your post. <a href="#editform">→ Go to editing area</a></p><hr></div>' + document.getElementById('wikiPreview').innerHTML;
         }
