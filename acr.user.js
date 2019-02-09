@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Account Request Messages
 // @namespace    http://github.com/Kenny2github
-// @version      0.3.1
+// @version      0.3.2
 // @description  Some canned comments for account request responses
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/acr.user.js
@@ -42,7 +42,7 @@ const MSGS = [
     },
     {
         autocomment: "Welcome!",
-        comment: "Thanks, that's all I needed. Your account on the Scratch Wiki has been approved! You may log in with your Scratch username and a password sent to your email at https://en.scratch-wiki.info/wiki/Special:UserLogin Also, please read the following intro pages: https://en.scratch-wiki.info/wiki/S:WELCOME https://en.scratch-wiki.info/wiki/S:GUIDES https://en.scratch-wiki.info/wiki/S:FAQ Have fun! If you're not sure about something, just ask me for help.",
+        comment: "Thanks, $name, that's all I needed. Your account on the Scratch Wiki has been approved! You may log in with your Scratch username and a password sent to your email at https://en.scratch-wiki.info/wiki/Special:UserLogin Also, please read the following intro pages: https://en.scratch-wiki.info/wiki/S:WELCOME https://en.scratch-wiki.info/wiki/S:GUIDES https://en.scratch-wiki.info/wiki/S:FAQ Have fun! If you're not sure about something, just ask me for help.",
         open: "false",
         title: "Finished",
         status: "submitCreate"
