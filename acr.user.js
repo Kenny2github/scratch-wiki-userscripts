@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Account Request Messages
 // @namespace    http://github.com/Kenny2github
-// @version      0.3.2
+// @version      0.3.3
 // @description  Some canned comments for account request responses
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/acr.user.js
@@ -23,6 +23,7 @@ const MSGS = [
         status: "submitCreate"
     },
     {
+        autocomment: "Please read https://en.scratch-wiki.info/wiki/S:CONTRIB",
         comment: "Hi, $name. Unfortunately, your account request on the Scratch Wiki couldn't be approved because your request showed that you didn't read https://en.scratch-wiki.info/wiki/S:CONTRIB completely before requesting. If you think you did read it or have other questions, read https://en.scratch-wiki.info/wiki/S:WHYREJECT for some answers. This decision is final. You'll need to request again if you still want an account. You'll be able to request again in around a week.",
         open: "true",
         title: "Reject",
