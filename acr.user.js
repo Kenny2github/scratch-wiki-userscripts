@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Account Request Messages
 // @namespace    http://github.com/Kenny2github
-// @version      0.3.4
+// @version      0.3.5
 // @description  Some canned comments for account request responses
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/acr.user.js
@@ -58,7 +58,8 @@ const MSGS = [
         autocomment: "Responses were not satisfactory.",
         comment: "Thanks for your responses, $name. Unfortunately, your account request on the Scratch Wiki couldn't be approved at this time because your request and subsequent responses to my comment showed that you didn't read the S:CONTRIB page completely before requesting. If you think you did read it, please see: https://en.scratch-wiki.info/wiki/S:WHYREJECT This decision is final. You'll need to request again if you still want an account, which you can do in around a week.",
         open: "false",
-        title: "Responses were lacking"
+        title: "Responses were lacking",
+        status: "submitDeny"
     }
 ];
 function clicker() {
