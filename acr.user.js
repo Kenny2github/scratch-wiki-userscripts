@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Account Request Messages
 // @namespace    http://github.com/Kenny2github
-// @version      0.3.5
+// @version      0.3.6
 // @description  Some canned comments for account request responses
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/acr.user.js
@@ -60,6 +60,18 @@ const MSGS = [
         open: "false",
         title: "Responses were lacking",
         status: "submitDeny"
+    },
+    {
+        autocomment: "Email not confirmed",
+        comment: "Hi, $name, and thank you for your Scratch Wiki account request! You did everything correctly, but it seems that your email address has not yet been confirmed. Confirming your email is important because it assures us that you will receive your password when your account is created, and when you reset it. Would you mind confirming your email? You can do so by clicking the link sent to your email. If you don't see any such link, check your spam. Thanks!",
+        open: "true",
+        title: "Email not confirmed (otherwise accept)"
+    },
+    {
+        autocomment: "Email not confirmed",
+        comment: "Thanks, $name, that's all I needed. However, it seems that your email address has not yet been confirmed. Confirming your email is important because it assures us that you will receive your password when your account is created, and when you reset it. Would you mind confirming your email? You can do so by clicking the link sent to your email. If you don't see any such link, check your spam. Once that's done, you should be good to go. Thanks!",
+        open: "false",
+        title: "Email not confirmed (held)"
     }
 ];
 function clicker() {
