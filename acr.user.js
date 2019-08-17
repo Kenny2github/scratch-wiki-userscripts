@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Account Request Messages
 // @namespace    http://github.com/Kenny2github
-// @version      0.3.6
+// @version      0.3.7
 // @description  Some canned comments for account request responses
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/acr.user.js
@@ -42,17 +42,23 @@ const MSGS = [
         title: "Missing last part"
     },
     {
+        autocomment: "Missing two parts",
+        comment: "Hi, $name. Thanks for your Scratch Wiki account request! You pointed out flaws very well, but you forgot the second and third parts. The S:CONTRIB page says to suggest two things to add to the flawed article, from two different categories. I didn't see those anywhere in the request. It also asks for a special something so we know you read the page. So could you comment those three things here? Then you should be good to go. Thanks!",
+        open: "true",
+        title: "Missing two parts (hold)"
+    },
+    {
+        autocomment: "One flaw is invalid",
+        comment: "Hi, $name. Thanks for your Scratch Wiki account request! You did everything well, but FYI, \"builtin\" is an accepted spelling of \"built-in\" or \"built in\". Could you reply here with one more flaw to replace this invalid one? Then you should be good to go. Thanks!",
+        open: "true",
+        title: "Builtin used as flaw"
+    },
+    {
         autocomment: "Welcome!",
         comment: "Thanks, $name, that's all I needed. Your account on the Scratch Wiki has been approved! You may log in with your Scratch username and a password sent to your email at https://en.scratch-wiki.info/wiki/Special:UserLogin Also, please read the following intro pages: https://en.scratch-wiki.info/wiki/S:WELCOME https://en.scratch-wiki.info/wiki/S:GUIDES https://en.scratch-wiki.info/wiki/S:FAQ Have fun! If you're not sure about something, just ask me for help.",
         open: "false",
         title: "Finished",
         status: "submitCreate"
-    },
-    {
-        autocomment: "Missing two parts",
-        comment: "Hi, $name. Thanks for your Scratch Wiki account request! You pointed out flaws very well, but you forgot the second and third parts. The S:CONTRIB page says to suggest two things to add to the flawed article, from two different categories. I didn't see those anywhere in the request. It also asks for a special something so we know you read the page. So could you comment those three things here? Then you should be good to go. Thanks!",
-        open: "true",
-        title: "Missing two parts (hold)"
     },
     {
         autocomment: "Responses were not satisfactory.",
@@ -71,7 +77,7 @@ const MSGS = [
         autocomment: "Email not confirmed",
         comment: "Thanks, $name, that's all I needed. However, it seems that your email address has not yet been confirmed. Confirming your email is important because it assures us that you will receive your password when your account is created, and when you reset it. Would you mind confirming your email? You can do so by clicking the link sent to your email. If you don't see any such link, check your spam. Once that's done, you should be good to go. Thanks!",
         open: "false",
-        title: "Email not confirmed (held)"
+        title: "Email not confirmed (was held)"
     }
 ];
 function clicker() {
