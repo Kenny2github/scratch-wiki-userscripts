@@ -78,7 +78,14 @@ const MSGS = [
         comment: "Thanks, $name, that's all I needed. However, it seems that your email address has not yet been confirmed. Confirming your email is important because it assures us that you will receive your password when your account is created, and when you reset it. Would you mind confirming your email? You can do so by clicking the link sent to your email. If you don't see any such link, check your spam. Once that's done, you should be good to go. Thanks!",
         open: "false",
         title: "Email not confirmed (was held)"
-    }
+    },
+    {
+        autocomment: "Please read https://en.scratch-wiki.info/wiki/S:CONTRIB",
+        comment: "Hi, $name. Unfortunately, your account request on the Scratch Wiki couldn't be approved because your request showed that you didn't read https://en.scratch-wiki.info/wiki/S:CONTRIB completely before requesting. If you think you did read it or have other questions, read https://en.scratch-wiki.info/wiki/S:WHYREJECT for some answers. This decision is final. You'll need to request again if you still want an account. You can request again once you meet the requirements in S:CONTRIB.",
+        open: "true",
+        title: "New Scratcher or >2 months",
+        status: "submitDeny"
+    },
 ];
 function clicker() {
     this.select();
