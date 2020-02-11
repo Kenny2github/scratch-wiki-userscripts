@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cite This Post
 // @namespace    https://github.com/Kenny2github
-// @version      0.3
+// @version      0.4
 // @description  get a reference in the correct format copied in just a couple clicks!
 // @author       Kenny2github
 // @updateURL    https://github.com/Kenny2github/scratch-wiki-userscripts/raw/master/citepost.user.js
@@ -19,7 +19,7 @@ if (window.location.hostname == 'scratcharchive.asun.co') {
             id = i.id; //id of div
             username = document.querySelector('#' + id + ' > div > div > div.postleft > dl > dt > strong > a').innerHTML; //username of poster
             datem = this.previous().innerHTML.match(/(\d+)-(\d+)-(\d+)/); //match date
-            date = '(' + datem[3].replace(/^0*/,'') + '/' + datem[2].replace(/^0*/,'') + '/' + datem[1].replace(/^0*/, '') + ')'; //piece date together from match
+            date = datem[3].replace(/^0*/,'') + '/' + datem[2].replace(/^0*/,'') + '/' + datem[1].replace(/^0*/, ''); //piece date together from match
             sel = window.getSelection() + ''; //cast selection to string
             if (i.classList.contains('firstpost')) {
                 defquote = document.querySelector('#' + id + ' > div > div > div.postright > h3').textContent + '[title]';
@@ -27,7 +27,9 @@ if (window.location.hostname == 'scratcharchive.asun.co') {
                 defquote = document.querySelector('#' + id + ' > div > div > div.postright > div.postmsg').children[0].innerText.split('\n')[0];
             }
             quote = sel ? sel : defquote; //selection or title
-            ref = username + '. ' + date + '. "' + quote + '" '; //piece reference together
+            tid = window.location.href.split('?', 2)[1].match(/id=(\d+)/)[1];
+            post = i.classList.contains('firstpost') ? '[[ar-topic:' + tid + ']]' : id.substr(1);
+            ref = '{{cite post|' + username + '|' + date + '|' + quote + '|' + post + '}}'; //piece reference together
             //copy reference to clipboard
             temp = document.createElement('textarea');
             temp.textContent = ref;
